@@ -1,7 +1,15 @@
+import React from "react";
+
 function MainContent() {
+  const mainStyle = {
+    margin: "10px",
+    padding: "10px",
+    backgroundColor: "#e6e6e6"
+  };
+
   return (
-    <main style={{ padding: '20px', fontSize: '18px', textAlign: 'center', backgroundColor: '#eef' }}>
-      <p>I love to visit New York, Paris, and Tokyo.</p>
+    <main style={mainStyle}>
+      <p>This is the main content of the app.</p>
     </main>
   );
 }
