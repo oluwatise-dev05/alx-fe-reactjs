@@ -1,19 +1,10 @@
-import React from "react";
-
 function Footer() {
-  const footerStyle = {
-    padding: "10px",
-    textAlign: "center",
-    backgroundColor: "#d9d9d9"
-  };
-
   return (
-    <footer style={footerStyle}>
-      <p>&copy; 2025 My App</p>
+    <footer style={{ backgroundColor: 'black', color: 'white', textAlign: 'center', padding: '10px' }}>
+      <p>&copy; 2025 Oluwatise Adetola</p>
     </footer>
   );
 }
 
 export default Footer;
-
 
