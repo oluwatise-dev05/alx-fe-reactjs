@@ -1,7 +1,8 @@
+
 function Footer() {
   return (
-    <footer style={{ backgroundColor: 'black', color: 'white', textAlign: 'center', padding: '10px' }}>
-      <p>&copy; 2025 Oluwatise Adetola</p>
+    <footer style={{ backgroundColor: '#333', color: 'white', textAlign: 'center', padding: '15px' }}>
+      <p>&copy; 2025 My Favorite Cities App</p>
     </footer>
   );
 }

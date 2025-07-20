@@ -1,7 +1,7 @@
 function MainContent() {
   return (
-    <main style={{ padding: '20px', backgroundColor: '#f0f0f0' }}>
-      <p>Welcome to my React application showcasing my favorite cities!</p>
+    <main style={{ padding: '20px', backgroundColor: '#cce5ff', textAlign: 'center', color: '#001f3f' }}>
+      <p>Welcome to the app! Explore and enjoy your favorite cities.</p>
     </main>
   );
 }
