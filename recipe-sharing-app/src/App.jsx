@@ -1,16 +1,20 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import AddRecipeForm from './components/AddRecipeForm';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
+import EditRecipeForm from './components/EditRecipeForm';
+import AddRecipeForm from './components/AddRecipeForm';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<RecipeList />} />
-      <Route path="/add" element={<AddRecipeForm />} />
-      <Route path="/recipe/:id" element={<RecipeDetails />} />
-    </Routes>
+   <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<RecipeList recipes={recipes} />} />
+    <Route path="/recipe/:id" element={<RecipeDetails recipes={recipes} />} />
+    <Route path="/edit/:id" element={<EditRecipeForm recipes={recipes} />} />
+    <Route path="/add" element={<AddRecipeForm />} />
+  </Routes>
+</BrowserRouter>
   );
 };
 
